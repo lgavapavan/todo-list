@@ -1,0 +1,8 @@
+<h1>{{ title }}</h1>
+<ul>
+  <li *ngFor="let item of todos"> {{ item.id }} - {{ item.title }} - {{ item.done }} |
+
+    <button *ngIf="!item.done">Concluir</button> | <button>Remover</button> </li>
+</ul>
+
+<button (click)="alterarTexto()">Alterar titulo</button>
